@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -11,11 +12,12 @@ interface Props {
 
 const AppointmentCard = ({ title, userEmail, category, userImage, id }: Props) => {
   return (
-    <div className="w-full border bg-white rounded-lg transition duration-300 hover:shadow-lg p-6 flex items-center space-x-6">
+    <div className="w-full border border-secondary-[2px] bg-slate-100 rounded-lg transition duration-300 hover:shadow-lg cursor-pointer p-6 flex items-center space-x-6">
       <div className="flex-shrink-0">
-        {/* User Image */}
-        <img
-          src={userImage || '/default-avatar.png'} // Use a default image if no user image is provided
+        <Image
+          height={150}
+          width={150}
+          src={userImage || '/avatar.png'}
           alt={title}
           className="w-16 h-16 rounded-full object-cover"
         />

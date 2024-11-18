@@ -20,7 +20,7 @@ const layout = async ({
       <Header />
       <div className="flex-1 max-w-screen-xl mx-auto flex flex-col lg:flex-row custom-scrollbar">
         <FeedWrapper>
-          <div className='p-4 flex flex-col space-y-6'>
+          <div className='p-4 flex pt-24 flex-col space-y-6'>
             <h1>View the Latest Listings</h1>
             {appointments.map((appointment: { _id: Key | null | undefined; title: string; userEmail: string; category: string; userImage: string; }) => (
               <AppointmentCard

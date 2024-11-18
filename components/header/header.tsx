@@ -9,7 +9,7 @@ import SignIn from './signin';
 const Header = async () => {
     const session = await getSession();
   return (
-    <header className='w-full border-b'>
+    <header className='w-full border-b fixed'>
         <nav className='flex items-center justify-between space-x-4 mx-auto max-w-screen-xl p-4'>
             <Logo />
             {
